@@ -97,19 +97,26 @@ body {
     width: 100px;
     height: 70px;
 }
+
+#home{
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 .back1Container {
     position: relative;
     width: 99vw;
     height: 900px;
-    background-image: url('Back1.jpg');
+    background-image: url('./image/Back1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.text {
-    padding-top: 140px;
-    padding-left: 60px;
-}
+
 .text h3 {
     font-size: 40px;
     color: #bc74a5;
@@ -670,6 +677,14 @@ body {
   background-repeat: no-repeat;
   background-position-x:23px;
 }
+
+.img-text{
+    display: flex;
+    
+}
+
+
+
 #year{
     padding-top: 30px;
 }
